@@ -1,0 +1,23 @@
+[package]
+name = "bitcoin-wallet-timepods"
+version = "1.1.0"
+authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/rust-bitcoin/rust-wallet/"
+repository = "https://github.com/rust-bitcoin/rust-wallet/"
+documentation = "https://github.com/rust-bitcoin/rust-wallet/"
+description = "Wallet library for Bitcoin"
+keywords = [ "crypto", "bitcoin" ]
+readme = "README.md"
+
+[dependencies]
+bitcoin = { version= "0.23", features=["use-serde"]}
+rand="0.7"
+rust-crypto = "0.2"
+serde = "1"
+serde_derive = "1"
+
+[dev-dependencies]
+bitcoin = { version= "0.23", features=["use-serde", "bitcoinconsensus"]}
+serde_json="1"
+hex = "0.3"
